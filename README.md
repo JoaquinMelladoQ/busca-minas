@@ -7,8 +7,7 @@ This project is a simple Busca Minas game managed using Maven. The project was e
 To set up the project and run the game, follow these steps:
 
 1. Clone the repository:
-git clone <repository>
-
+git clone https://github.com/JoaquinMelladoQ/busca-minas.git
 
 2. Compile the project using Maven:
 "mvn compile"
