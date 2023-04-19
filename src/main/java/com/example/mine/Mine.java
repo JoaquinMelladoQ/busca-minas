@@ -42,7 +42,7 @@ public class Mine {
 
             if (row >= 0 && row < rows && col >= 0 && col < cols) {
                 if (board[row][col] == '*') {
-                    System.out.println("Lo lamento! Pisaste una mina en las coordenadas (" + (row) + ", " + (col) + ")!");
+                    System.out.println("Lo lamento! Pisaste una mina en las coordenadas (" + (row + 1) + ", " + (col + 1) + ")!");
                     board[row][col] = 'X';
                     printBoard();
                     scanner.close();
@@ -62,8 +62,8 @@ public class Mine {
 
     void printBoard() {
         System.out.println("Busca minas:");
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 if (board[i][j] == 'X') {
                     System.out.print("X ");
                 } else {
